@@ -35,7 +35,7 @@ function showTasks() {
   if (obj !== null) {
     for (let i = 0; i < obj.length; i++) {
       outPut += `<div class="task">
-                  ${obj[i]["title"]}
+                  <div class="taskText">${obj[i]["title"]}</div>
                   <button onClick="deleteTask(${i})" class="delete">Done</button>
                 </div>`;
     }
